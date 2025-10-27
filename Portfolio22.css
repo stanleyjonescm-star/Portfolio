@@ -1,0 +1,633 @@
+/* ------------------------------
+   DEEPAN PORTFOLIO - STYLE.CSS
+   Premium Neon Glow Theme
+------------------------------ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #06080f, #0c1624);
+  color: #f3f4f8;
+  overflow-x: hidden;
+}
+
+/* =========================
+   HEADER / NAVBAR
+========================= */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px 50px;
+  background: rgba(15, 20, 35, 0.7);
+  backdrop-filter: blur(14px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+  box-shadow: 0 2px 25px rgba(0, 0, 0, 0.4);
+}
+
+.logo {
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+.logo span {
+  background: linear-gradient(90deg, #00fff2, #0098f0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin: 0 20px;
+}
+
+.nav-links a {
+  color: #d1d1d1;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #00fff2;
+  text-shadow: 0 0 12px #00fff2;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 180px 10% 120px;
+  gap: 60px;
+  position: relative;
+  z-index: 1;.
+  
+
+}
+
+
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-text h2 {
+  font-size: 2.9rem;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.hero-text h2 span {
+  background: linear-gradient(90deg, #00fff2, #007bff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-text h3 {
+  font-size: 1.5rem;
+  color: #cfd3e6;
+  margin-bottom: 18px;
+}
+
+.hero-text p {
+  color: #bfc4d1;
+  margin-bottom: 30px;
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+.hero-img img {
+
+    padding-top: 100px; 
+  width: 340px;
+  animation: float 4s ease-in-out infinite;
+  filter: drop-shadow(0 0 25px rgba(0, 255, 255, 0.4));
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+/* =========================
+   BUTTONS
+========================= */
+.btn {
+  padding: 12px 30px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.primary-btn {
+  background: linear-gradient(90deg, #00fff2, #007bff);
+  color: #000;
+}
+
+.primary-btn:hover {
+  box-shadow: 0 0 20px #00fff2;
+  transform: translateY(-2px);
+}
+
+.secondary-btn {
+  border: 2px solid #00fff2;
+  color: #00fff2;
+  background: transparent;
+}
+
+.secondary-btn:hover {
+  background: linear-gradient(90deg, #00fff2, #007bff);
+  color: #000;
+  box-shadow: 0 0 15px #00fff2;
+}
+
+/* =========================
+   ABOUT SECTION
+========================= */
+.about {
+  padding: 120px 10%;
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(8px);
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+}
+
+.about-img img {
+  width: 300px;
+  border-radius: 50%;
+  border: 3px solid #00fff2;
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.3);
+}
+
+.about-content {
+  flex: 1;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, #00fff2, #007bff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about-content p {
+  color: #d9deea;
+  margin-bottom: 25px;
+  line-height: 1.8;
+}
+
+.skills h3 {
+  color: #00fff2;
+  margin-bottom: 10px;
+}
+
+.skills li {
+  margin-bottom: 8px;
+  color: #d9deea;
+  position: relative;
+}
+
+.skills li::before {
+  content: "▹";
+  color: #00fff2;
+  margin-right: 8px;
+}
+
+/* =========================
+   PROJECTS SECTION
+========================= */
+.projects {
+  padding: 120px 10%;
+  text-align: center;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.project-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  filter: brightness(0.9);
+}
+
+.project-info {
+  padding: 20px;
+  color: #d8dff0;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.3);
+}
+
+/* =========================
+   CONTACT SECTION
+========================= */
+.contact {
+  padding: 120px 10%;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.contact p {
+  color: #d1d6e3;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+  gap: 15px;
+  margin-top: 40px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 14px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  transition: 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  box-shadow: 0 0 10px #00fff2;
+}
+
+/* =========================
+   FOOTER
+========================= */
+.footer {
+  text-align: center;
+  padding: 40px 0;
+  background: #050811;
+}
+
+.footer p {
+  color: #a9b3c9;
+  margin-bottom: 15px;
+}
+
+.socials img {
+  width: 28px;
+  margin: 0 10px;
+  transition: 0.3s ease;
+  filter: brightness(0) invert(1);
+}
+
+.socials img:hover {
+  filter: drop-shadow(0 0 12px #00fff2);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .header {
+    padding: 15px 30px;
+  }
+}
+/* === Smooth Section Animation Base === */
+.fade-in, .slide-up, .slide-left, .slide-right {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.9s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.slide-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.slide-left {
+  transform: translateX(-60px);
+}
+.slide-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.slide-right {
+  transform: translateX(60px);
+}
+.slide-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* === Hero Text Reveal === */
+.hero-content h1,
+.hero-content h2,
+.hero-content p,
+.hero-content .buttons {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.7s ease;
+}
+
+.hero-content h1.show-text,
+.hero-content h2.show-text,
+.hero-content p.show-text,
+.hero-content .buttons.show-text {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== Text Reveal Animation ===== */
+.reveal-text {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+  transition: all 0.8s ease-out;
+}
+
+/* ===== Floating Cursor Glow ===== */
+.cursor-glow {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  border-radius: 50%;
+  pointer-events: none;
+  background: radial-gradient(circle, rgba(0,255,255,0.3), transparent 70%);
+  mix-blend-mode: screen;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  transition: transform 0.1s linear;
+}
+
+/* ===== Ripple Effect on Click ===== */
+.ripple {
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: rgba(0, 255, 255, 0.4);
+  transform: translate(-50%, -50%) scale(0);
+  animation: ripple-anim 0.6s ease-out forwards;
+  z-index: 9998;
+}
+
+@keyframes ripple-anim {
+  to {
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0;
+  }
+}
+
+/* ===== Back to Top Button ===== */
+.top-btn {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  padding: 10px 15px;
+  border: none;
+  background: rgba(0, 255, 255, 0.3);
+  border-radius: 8px;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s ease;
+  backdrop-filter: blur(5px);
+}
+
+/* ===== Text Reveal Animation ===== */
+.reveal-text {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+  transition: all 0.8s ease-out;
+}
+
+/* ===== Floating Cursor Glow ===== */
+.cursor-glow {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  border-radius: 50%;
+  pointer-events: none;
+  background: radial-gradient(circle, rgba(0,255,255,0.3), transparent 70%);
+  mix-blend-mode: screen;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  transition: transform 0.1s linear;
+}
+
+/* ===== Ripple Effect on Click ===== */
+.ripple {
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: rgba(0, 255, 255, 0.4);
+  transform: translate(-50%, -50%) scale(0);
+  animation: ripple-anim 0.6s ease-out forwards;
+  z-index: 9998;
+}
+
+@keyframes ripple-anim {
+  to {
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0;
+  }
+}
+
+/* ===== Back to Top Button ===== */
+.top-btn {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  padding: 10px 15px;
+  border: none;
+  background: rgba(0, 255, 255, 0.3);
+  border-radius: 8px;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s ease;
+  backdrop-filter: blur(5px);
+}
+
+/* ===== Text Reveal Animation ===== */
+.reveal-text {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+  transition: all 0.8s ease-out;
+}
+
+/* ===== Floating Cursor Glow ===== */
+.cursor-glow {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  border-radius: 50%;
+  pointer-events: none;
+  background: radial-gradient(circle, rgba(0,255,255,0.3), transparent 70%);
+  mix-blend-mode: screen;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  transition: transform 0.1s linear;
+}
+
+/* ===== Ripple Effect on Click ===== */
+.ripple {
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: rgba(0, 255, 255, 0.4);
+  transform: translate(-50%, -50%) scale(0);
+  animation: ripple-anim 0.6s ease-out forwards;
+  z-index: 9998;
+}
+
+@keyframes ripple-anim {
+  to {
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0;
+  }
+}
+
+/* ===== Back to Top Button ===== */
+.top-btn {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  padding: 10px 15px;
+  border: none;
+  background: rgba(0, 255, 255, 0.3);
+  border-radius: 8px;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s ease;
+  backdrop-filter: blur(5px);
+}
+
+/* ===== Text Reveal Animation ===== */
+.reveal-text {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+  transition: all 0.8s ease-out;
+}
+
+/* ===== Floating Cursor Glow ===== */
+.cursor-glow {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  border-radius: 50%;
+  pointer-events: none;
+  background: radial-gradient(circle, rgba(0,255,255,0.3), transparent 70%);
+  mix-blend-mode: screen;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  transition: transform 0.1s linear;
+}
+
+/* ===== Ripple Effect on Click ===== */
+.ripple {
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: rgba(0, 255, 255, 0.4);
+  transform: translate(-50%, -50%) scale(0);
+  animation: ripple-anim 0.6s ease-out forwards;
+  z-index: 9998;
+}
+
+@keyframes ripple-anim {
+  to {
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0;
+  }
+}
+
+/* ===== Back to Top Button ===== */
+.top-btn {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  padding: 10px 15px;
+  border: none;
+  background: rgba(0, 255, 255, 0.3);
+  border-radius: 8px;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s ease;
+  backdrop-filter: blur(5px);
+}
+
+.top-btn.show {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);}

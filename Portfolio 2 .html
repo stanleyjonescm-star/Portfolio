@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Deepan - Portfolio | Web Developer & Designer" />
+  <title>Deepan | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="Portfolio22.css">
+  <link rel="icon" type="image/x-icon" href="deepan.png">
+</head>
+
+<body>
+  <!-- ====== HEADER / NAVBAR ====== -->
+  <header class="header" id="header">
+    <div class="container">
+      <h1 class="logo">Deepan<span>.</span></h1>
+
+      <nav class="navbar" id="navbar">
+        <ul class="nav-links">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="menu-toggle" id="menu-toggle"></div>
+    </div>
+  </header>
+
+  <!-- ====== HERO SECTION ====== -->
+  <section class="hero" id="home">
+    <div class="container hero-container">
+      <div class="hero-text">
+        <h2>Hello, I'm <span>Deepan</span></h2>
+        <h3>Front-End Developer & Designer</h3>
+        <p>
+          I build modern, responsive, and interactive websites with clean design and engaging animations.
+        </p>
+        <a href="#projects" class="btn primary-btn">View My Work</a>
+        <a href="#contact" class="btn secondary-btn">Contact Me</a>
+      </div>
+
+      <div class="hero-img">
+        <img src="https://cdn-icons-png.flaticon.com/512/921/921356.png" alt="Deepan Illustration">
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== ABOUT SECTION ====== -->
+  <section class="about" id="about">
+    <div class="container about-container">
+      <div class="about-img">
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Deepan Profile">
+      </div>
+
+      <div class="about-content">
+        <h2 class="section-title">About Me</h2>
+        <p>
+          I'm a passionate web developer who loves to create visually stunning and user-friendly digital experiences.
+          I specialize in front-end technologies and continuously strive to improve my design and coding skills.
+        </p>
+
+        <div class="skills">
+          <h3>Skills</h3>
+          <ul>
+            <li>HTML5 / CSS3 / JavaScript (ES6+)</li>
+            <li>Responsive Web Design</li>
+            <li>UI/UX Design Principles</li>
+            <li>WordPress & CMS Customization</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== PROJECTS SECTION ====== -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <h2 class="section-title">My Projects</h2>
+
+      <div class="project-grid">
+        <div class="project-card">
+          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" alt="Project 1">
+          <div class="project-info">
+            <h3>Real-Time Stock Ticker</h3>
+            <p>A live stock market tracking web app built using API .</p>
+            <a href="#" class="btn secondary-btn" >View Project</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="https://images.unsplash.com/photo-1521790365206-0d553872125f" alt="Project 2">
+          <div class="project-info">
+            <h3>Portfolio Website</h3>
+            <p>A personal portfolio designed with interactive UI .</p>
+            <a href="#" class="btn secondary-btn">View Project</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c" alt="Project 3">
+          <div class="project-info">
+            <h3>Business Landing Page</h3>
+            <p>A professional landing page with animations, contact form, and marketing layout.</p>
+            <a href="#" class="btn secondary-btn">View Project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== CONTACT SECTION ====== -->
+  <section class="contact" id="contact">
+    <div class="container contact-container">
+      <h2 class="section-title">Get in Touch</h2>
+      <p>If you’d like to collaborate or just say hello, feel free to send me a message!</p>
+
+      <form id="contactForm" class="contact-form">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn primary-btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Deepan. All rights reserved.</p>
+      <div class="socials">
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter"></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn"></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="GitHub"></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
